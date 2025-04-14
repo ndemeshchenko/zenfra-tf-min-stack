@@ -31,7 +31,7 @@ resource "null_resource" "print_date" {
 
   provisioner "local-exec" {
     command = <<EOT
-      for i in {1..60}; do
+      for i in $(seq 1 60); do
         date
         sleep 1
       done
