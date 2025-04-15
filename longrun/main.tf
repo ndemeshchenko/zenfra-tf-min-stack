@@ -18,7 +18,7 @@ resource "random_pet" "example" {
 }
 
 resource "random_pet" "example2" {
-  length    = 2
+  length    = 5
   separator = ":"
 }
 
