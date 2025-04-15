@@ -17,6 +17,11 @@ resource "random_pet" "example" {
   separator = "-"
 }
 
+resource "random_pet" "example2" {
+  length    = 2
+  separator = ":"
+}
+
 # Create a local file with content from the random pet name
 resource "local_file" "example" {
   filename = "${path.module}/output.txt"
